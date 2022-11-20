@@ -1,0 +1,320 @@
+header {
+  background-color: rgb(61, 61, 61);
+}
+
+header h1 {
+  color: #fff;
+  font-size: 1.3rem;
+  padding: 8px;
+}
+
+.mainVisual {
+  display: flex;
+  height: 110vh;
+  flex-wrap: wrap;
+}
+
+main .mainVisual div:nth-of-type(1) {
+  height: 60%;
+  width: 100%;
+  animation-name: communism;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .mainVisual div:nth-of-type(1) h2 {
+  color: #fff;
+  font-size: 5rem;
+  font-weight: normal;
+  font-family: 'Lobster', cursive;
+  ;
+}
+
+@keyframes communism {
+  0% {
+    background-color: #8DE0E3;
+  }
+
+  20% {
+    background-color: #E3B28D;
+  }
+
+  40% {
+    background-color: #E38D8D;
+  }
+
+  60% {
+    background-color: #E3E38D;
+  }
+
+  80% {
+    background-color: #E3E38D;
+  }
+
+  100% {
+    background-color: #AE8DE3;
+  }
+}
+
+main .mainVisual div:nth-of-type(2) {
+  height: 40%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ff6347;
+}
+
+main .mainVisual div:nth-of-type(2) a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  display: block;
+  border: solid 1px #fff;
+  width: 70%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  transition: .4s;
+}
+
+main .mainVisual div:nth-of-type(2) a:hover {
+  background-color: #fff;
+  color: #ff6347;
+  transition: .4s;
+}
+
+main .mainVisual div:nth-of-type(3) {
+  height: 40%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #87ceeb;
+  transition: .4s;
+}
+
+main .mainVisual div:nth-of-type(3):hover {
+  background: #d687eb;
+  transition: .4s;
+}
+
+main .mainVisual div:nth-of-type(3) a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  display: block;
+  border: solid 1px #fff;
+  width: 70%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  transition: .4s;
+  overflow: hidden;
+  background: url("../img/03_icon_arrow.png") no-repeat 110%;
+}
+
+main .mainVisual div:nth-of-type(3) a:hover {
+  letter-spacing: 1rem;
+  transition: .4s;
+  background: url("../img/03_icon_arrow.png") no-repeat 90%;
+}
+
+/*
+main .mainVisual div:nth-of-type(3) a::after {
+  content: url("../img/03_icon_arrow.png");
+  display: inline-block;
+  position: relative;
+  top: 4px;
+  width: 0;
+  left: 260px;
+  transition: .4s;
+}
+
+main .mainVisual div:nth-of-type(3) a:hover::after {
+  left: 130px;
+  transition: .4s;
+} */
+
+main .other {
+  width: 100%;
+  border-top: 1px dotted #000;
+  margin-top: 20px;
+}
+
+main .other h3 {
+  font-size: .8rem;
+  margin: 10px 10px;
+}
+
+main .other .card {
+  border: solid 1px tomato;
+  width: 270px;
+  height: 400px;
+  margin-left: 20px;
+  border-radius: 10px;
+  border: 1px solid rgb(229, 229, 229);
+  transition: .3s ease-in;
+  overflow: hidden;
+}
+
+main .other .card:hover {
+  box-shadow: 2px 3px 8px 0px rgba(98, 98, 98, 0.45);
+  transition: .3s ease-out;
+}
+
+main .other .card .cardImg {
+  height: 180px;
+  width: 200%;
+  display: flex;
+  transition: .3s;
+}
+
+main .other .card .cardImg img {
+  object-fit: cover;
+  height: 100%;
+  /* border-radius: 10px 10px 0 0; */
+}
+
+main .other .card .cardImg:hover {
+  transform: translateX(-50%);
+  transition: .4s;
+}
+
+main .other .card .cardText>img {
+  border-radius: 50%;
+  width: 75px;
+  position: relative;
+  top: -55px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+main .other .card .cardText>h2 {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: -40px;
+}
+
+main .other .card .cardText>p {
+  font-family: "system-ui", "Helvetica Neue", "Segoe UI", Roboto, ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-size: 0.7rem;
+  margin: 20px;
+  line-height: 1.8;
+}
+
+
+
+main .other .extra {
+  width: 100%;
+  height: 800px;
+  margin: 20px;
+  border: 1px dotted #000;
+}
+
+main .other .extra>h3 {
+  margin-top: 30px;
+}
+
+main .other .extra p {
+  padding-left: 10px;
+}
+
+main .extra #start {
+  background: #87ceeb;
+}
+
+main .extra input {
+  font-size: 0.8rem;
+  width: 150px;
+  text-align: center;
+  padding: 4px;
+  margin: 10px;
+  border-radius: 2px;
+  color: #fff;
+  background: rgb(255, 100, 100);
+}
+
+.extraBox {
+  width: 400px;
+  height: 400px;
+  /* border:solid 1px tomato; */
+  position: relative;
+  top: 100px;
+  left: 500px;
+  transform-style: preserve-3d;
+  transform-origin: center center;
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0);
+}
+
+.extraBoxAnime{
+  animation: guruguru 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes guruguru {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+  }
+
+  100% {
+    transform: rotateX(-360deg) rotateY(360deg) rotateZ(-360deg)
+  }
+}
+
+.extraBox .ex {
+  background: url("../img/ussr_emblem.png") center center no-repeat;
+  background-size: 70% 70%;
+  position: absolute;
+  border: solid 1px #f00;
+  box-shadow: 0px 0px 10px #ff0;
+  width: 100%;
+  height: 100%;
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 320px;
+  color: #f00;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px #ff0;
+}
+
+.extraBox .front {
+  z-index: 10;
+  transform: translateZ(200px)
+}
+
+.extraBox .right {
+  z-index: 1;
+  transform: translateX(200px) rotateY(90deg)
+}
+
+.extraBox .left {
+  transform: translateX(-200px) rotateY(-90deg)
+}
+
+.extraBox .back {
+  transform: translateZ(-200px) rotateY(180deg)
+}
+
+.extraBox .top {
+  transform: translateY(-200px) rotateX(90deg) rotateY(0);
+  transform-origin: right center;
+  transition: 0.6s;
+}
+
+.extraBox:hover .top {
+  transform-origin: right center;
+  transform: translateY(-200px) rotateX(90deg) rotateY(180deg)
+}
+
+.extraBox .bottom {
+  transform: translateY(200px) rotateX(-90deg)
+}
+
+footer p {
+  text-align: center;
+}

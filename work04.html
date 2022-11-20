@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="keywords" content="">
+  <meta name="description" content="ここに説明文を設定">
+  <title>CSSで作成するリッチなスタイル</title>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@twitteraccount">
+  <meta property="og:site_name" content="サイト名">
+  <meta property="og:title" content="サイトタイトル">
+  <meta property="og:description" content="サイト説明文">
+  <meta property="og:url" content="https://hoge.ecc.com/">
+  <meta property="og:image" content="https://hoge.ecc.com/ogp.png">
+  <meta property="og:type" content="website">
+  <link rel="shortcut icon" href="http://www.hoge.hoge/favicon.ico" type="image/vnd.microsoft.icon">
+  <link rel="apple-touch-icon" href="http://www.hoge.hoge/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="css/ress.css">
+  <link rel="stylesheet" href="css/work04.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>CSS Animation</h1>
+  </header>
+  <main>
+    <div class="mainVisual">
+      <div>
+        <h2>WORK04 Animation</h2>
+      </div>
+      <div>
+        <a href="#">button</a>
+      </div>
+      <div>
+        <a href="#">button</a>
+      </div>
+    </div>
+
+    <div class="other">
+      <h3>プロフィールスタイルの作成</h3>
+      <div class="card">
+        <div class="cardImg">
+          <img src="img/04_img_bk.png" alt="草原">
+          <img src="img/04_super_image.jpeg" alt="ブッシュ大統領とゴルバチョフ書記長">
+        </div>
+        <div class="cardText">
+          <img src="img/04_img_kids.png" alt="プロフィール画像">
+          <h2>Tarou ECC</h2>
+          <p>2300年から日本に帰国してきた帰国子女。
+            親の仕事の影響で、5年の間にヨーロッパの各国の巡り、若干8才にしてすでに4ヶ国語可能。趣味はポケモン。</p>
+        </div>
+      </div>
+
+      <div class="extra">
+        <h3>Extra: 3DBOXの作成</h3>
+        <p>アニメーションの再生時間は5秒に設定されてます。</p>
+        <input type="button" value="アニメーションスタート" id="start">
+        <input type="button" value="再生時間1秒" id="1s">
+        <input type="button" value="再生時間5秒" id="5s">
+        <input type="button" value="再生時間10秒" id="10s">
+        <div class="extraBox" id="animation">
+          <div class="ex front">front</div>
+          <div class="ex right">right</div>
+          <div class="ex left">left</div>
+          <div class="ex back">back</div>
+          <div class="ex top">top</div>
+          <div class="ex bottom">bottom</div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p><small>copylight &copy; comp ecccomp.Inc</small></p>
+  </footer>
+  <script type="text/javascript">
+    const btn = document.getElementById("start")
+    const box = document.getElementById("animation")
+    const one = document.getElementById("1s")
+    const two = document.getElementById("5s")
+    const three = document.getElementById("10s")
+    btn.addEventListener("click", function () {
+      if (btn.value == "アニメーションスタート") {
+        btn.value = "アニメーションストップ"
+        box.classList.add("extraBoxAnime");
+      } else {
+        btn.value = "アニメーションスタート"
+        box.classList.remove("extraBoxAnime");
+      }
+    })
+    one.addEventListener("click", function () {
+      box.setAttribute("style", "animation-duration: 1s;");
+    })
+    two.addEventListener("click", function () {
+      box.setAttribute("style", "animation-duration: 5s;");
+    })
+    three.addEventListener("click", function () {
+      box.setAttribute("style", "animation-duration: 10s;");
+    })
+  </script>
+</body>
+
+</html>

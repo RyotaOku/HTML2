@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+.sample3_1 section p {
+  color: tomato;
+}
+
+.sample3_1 section:hover p {
+  color: skyblue;
+}
+
+/* h2に隣接するpタグに対して指定 */
+.sample3_2 section h2+p {
+  color: tomato;
+}
+
+/* h2以降のpタグに対して指定 */
+.sample3_3 section h2 ~ p {
+  color: tomato;
+}
+
+/* []内に含まれる属性を持つ要素 */
+.sample3_4 input[type="text"] {
+  border:solid 1px tomato;
+}
+
+/* ^(ハット記号)をつけると、最初の文字が○○の要素 */
+.sample3_4 a[href^="#"] {
+  border:solid 1px tomato;
+}
+.sample3_4 a[href^="http"] {
+  border:solid 1px skyblue;
+}
+
+.sample3_5 ul>li:first-child {
+  color: tomato;
+}
+
+.sample3_5 ol>li:last-child {
+  color: skyblue;
+}
+
+.sample3_6 li:nth-child(2n) {
+  color: tomato;
+}
+
+.sample3_7 li:nth-child(2n){
+  color: aqua;
+}
+
+.sample3_7 li:nth-child(2n+1){
+  color: red;
+}
+
+.sample3_7 li:nth-child(3n){
+  color: palegreen;
+}
+
+.sample3_8 p:nth-of-type(even) {
+  color: aqua;
+}
+
+.sample3_8 p:nth-of-type(odd) {
+  color: red;
+}

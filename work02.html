@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="keywords" content="">
+  <meta name="description" content="ここに説明文を設定">
+  <title>CSSで作成するドロップダウンメニュー</title>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@twitteraccount">
+  <meta property="og:site_name" content="サイト名">
+  <meta property="og:title" content="サイトタイトル">
+  <meta property="og:description" content="サイト説明文">
+  <meta property="og:url" content="https://hoge.ecc.com/">
+  <meta property="og:image" content="https://hoge.ecc.com/ogp.png">
+  <meta property="og:type" content="website">
+  <link rel="shortcut icon" href="http://www.hoge.hoge/favicon.ico" type="image/vnd.microsoft.icon">
+  <link rel="apple-touch-icon" href="http://www.hoge.hoge/logo.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ress@5.0.2/dist/ress.min.css">
+  <link rel="stylesheet" href="css/work02.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1>CSS DropDown Menu</h1>
+  </header>
+
+  <main class="main">
+
+    <nav>
+      <ul class="base">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">OFFICE</a>
+          <ul class="parent">
+            <li><a href="#">OFFICE A</a></li>
+            <li><a href="#">OFFICE B</a>
+              <ul class="child_navi">
+                <li><a href="#">EXTRA A-A</a></li>
+                <li><a href="#">EXTRA A-B</a></li>
+                <li><a href="#">EXTRA A-C</a></li>
+              </ul>
+            </li>
+            <li><a href="#">OFFICE C</a></li>
+          </ul>
+        </li>
+        <li><a href="#">ABOUT</a>
+          <ul class="parent">
+            <li><a href="#">ABOUT A</a></li>
+            <li><a href="#">ABOUT B</a></li>
+            <li><a href="#">ABOUT C</a></li>
+          </ul>
+        </li>
+        <li><a href="#">RECRUIT</a>
+          <ul class="parent">
+            <li><a href="#">RECRUIT A</a></li>
+            <li><a href="#">RECRUIT B</a></li>
+            <li><a href="#">RECRUIT C</a></li>
+          </ul>
+        </li>
+        <li><a href="#">CONTACT</a>
+          <ul class="parent">
+            <li><a href="#">CONTACT A</a>
+              <ul class="child_navi">
+                <li><a href="#">EXTRA A-A</a></li>
+                <li><a href="#">EXTRA A-B</a></li>
+                <li><a href="#">EXTRA A-C</a></li>
+              </ul>
+            </li>
+            <li><a href="#">CONTACT B</a></li>
+            <li><a href="#">CONTACT C</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </nav>
+  </main>
+  <footer>
+    <p><small>copyright &copy; comp ecccomp.Inc</small></p>
+  </footer>
+</body>
+
+</html>

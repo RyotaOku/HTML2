@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Shippori Mincho B1';
+  src: url("https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap");
+}
+
+header {
+  background: #302833;
+  height: 60px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 20px;
+  margin-left: 40px;
+  width: 200px;
+}
+
+header nav {
+  flex-basis: 50%;
+}
+
+header nav ul {
+  display: flex;
+  width: 100%;
+}
+
+header nav li {
+  list-style: none;
+  height: 60px;
+  flex-basis: 300px;
+}
+
+header nav li a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  line-height: 5;
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: background .4s;
+  position: relative;
+}
+
+header nav li a span {
+  position: relative;
+  color: #fff;
+  z-index: 3;
+}
+
+header nav li:not(.ex) a:hover {
+  background: #FDDEA5;
+  transition: .4s;
+}
+
+header nav .ex a::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  display: block;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #FDDEA5;
+ 	transform: translateX(-100%) rotateZ(0);
+  transition: .5s;
+	transform-origin: left top;
+}
+
+header nav .ex a:hover::after {
+  transform:translateX(100%) rotateZ(0);
+  transition: .3s;
+}
+
+main .mainVisual {
+  width: 100%;
+  height: 540px;
+  background: url("../img/03_bg_overlay.png") left top/4px,
+  linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgb(0, 0, 0) 100%),
+  url("../img/05_bg.jpg") center center/cover no-repeat;
+}
+
+main .mainVisual .text {
+  font-family: 'Shippori Mincho B1', serif;
+  position: absolute;
+  display: inline-block;
+  right: 100px;
+  top: 180px;
+  color: #fff;
+  animation-name: pui;
+  animation-duration: 1.8s;
+}
+@keyframes pui {
+  0%{
+opacity: 0;
+transform: translateX(100%) rotateZ(0);
+  }
+  100%{
+opacity: 1;
+transform: translateX(0) rotateZ(0);
+  }
+}
+
+main .mainVisual .text h2 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #fff;
+}
+
+main .tour h2 {
+  text-align: center;
+  margin: 30px;
+  font-family: 'Shippori Mincho B1', serif;
+}
+
+main .cardBox {
+  margin: 10px 10px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main .tour .card {
+  flex-grow: 1;
+}
+
+main .tour .card figure {
+  text-align: center;
+}
+
+main .tour .card img {
+  width: 252px;
+  height: 252px;
+  border-radius: 50%;
+}
+
+main .tour .card h3 {
+  text-align: center;
+  margin: 15px 0;
+  font-family: 'Shippori Mincho B1', serif;
+}
+
+main .tour .card p {
+  width: 300px;
+  margin: 0 auto;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+footer p {
+  clear: both;
+  text-align: center;
+}
