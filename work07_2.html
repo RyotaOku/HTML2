@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="keywords" content="">
+  <meta name="description" content="ここに説明文を設定">
+  <title>EC Company （103代目）Webテクノロジー会社</title>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@twitteraccount">
+  <meta property="og:site_name" content="サイト名">
+  <meta property="og:title" content="サイトタイトル">
+  <meta property="og:description" content="サイト説明文">
+  <meta property="og:url" content="https://hoge.ecc.com/">
+  <meta property="og:image" content="https://hoge.ecc.com/ogp.png">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="http://www.hoge.hoge/favicon.ico" type="image/vnd.microsoft.icon">
+  <link rel="apple-touch-icon" href="http://www.hoge.hoge/logo.png">
+  <link rel="stylesheet" href="css/ress.css">
+  <link rel="stylesheet" href="css/work07.css">
+</head>
+
+<body>
+  <header>
+    <h1><a href="#!">EC<br>Company</a></h1>
+    <nav>
+      <ul>
+        <li><a href="#!">top</a></li>
+        <li><a href="#!">news</a></li>
+        <li><a href="#!">service</a></li>
+        <li><a href="#!">blog</a></li>
+        <li><a href="#!">about</a></li>
+        <li><a href="#!">access</a></li>
+      </ul>
+      <p><a href="#!">お問い合わせ</a></p>
+      <button type="button" class="zdo_drawer_button">
+        <span class="zdo_drawer_bar zdo_drawer_bar1"></span>
+        <span class="zdo_drawer_bar zdo_drawer_bar2"></span>
+        <span class="zdo_drawer_bar zdo_drawer_bar3"></span>
+        <span class="zdo_drawer_menu_text zdo_drawer_text">MENU</span>
+        <span class="zdo_drawer_close zdo_drawer_text">CLOSE</span>
+      </button>
+      <div class="menuDisplay">
+        <ul class="menu">
+          <li><a href="#!">top</a></li>
+          <li><a href="#!">news</a></li>
+          <li><a href="#!">service</a></li>
+          <li><a href="#!">blog</a></li>
+          <li><a href="#!">about</a></li>
+          <li><a href="#!">access</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="mainVisual">
+      <section>
+        <h2>はじめまして EC Companyです。</h2>
+        <p>EC Companyは、HTML5/CSS3をベースに高い技術力でお客様の提案にあったWebサイトを作成します。 初めてWebサイト制作を依頼したい方、相談に乗って欲しい形お気軽にご連絡下さい。</p>
+        <p><a href="#!">お問い合わせはこちら</a></p>
+      </section>
+    </div>
+
+
+    <section>
+      <div class="blog">
+        <h3>blog</h3>
+        <div class="cardFlex">
+          <section>
+            <a href="#!">
+              <div class="card">
+                <figure><img src="img/07_img_photo_01.jpg" alt="Pepper（16代目）の暴走を止めるデバッグ処理について"></figure>
+                <h4><time datetime="2100-03-02">2100.3.2</time></h4>
+                <p>Pepper（16代目）の暴走を止めるデバッグ処理について</p>
+              </div>
+            </a>
+          </section>
+          <section>
+            <a href="#!">
+              <div class="card">
+                <figure><img src="img/07_img_photo_02.jpg" alt="オーダーメイドデザイン"></figure>
+                <h4><time datetime="2100-02-28">2100.2.28</time></h4>
+                <p>Apple網膜埋込み型デバイス、EyePhoneの解像度の対応と、デザインパターン</p>
+              </div>
+            </a>
+          </section>
+          <section>
+            <a href="#!">
+              <div class="card">
+                <figure><img src="img/07_img_photo_03.jpg" alt="ウェアラブル・アプリ開発"></figure>
+                <h4><time datetime="2100-02-01">2100.2.1</time></h4>
+                <p>Webサイトと合わせて、ウェアラブル端末やアプリ開発なども同時開発が可能です。 弊社では、すべての外国語が話せるファビオ・サカティが多言語での開発実装を可能にしています。</p>
+              </div>
+            </a>
+          </section>
+        </div>
+        <p><a href="#!">作事例はこちら</a></p>
+      </div>
+    </section>
+
+
+
+  </main>
+  <footer>
+    <p><small>copy &copy; EC COMPANY</small></p>
+  </footer>
+  <script>
+    const button = document.querySelector('.zdo_drawer_button');
+    const menu = document.querySelector(".menuDisplay")
+    button.addEventListener('click', () => {
+      button.classList.toggle('active');
+      menu.classList.toggle("act")
+    });
+  </script>
+</body>
+
+</html>
